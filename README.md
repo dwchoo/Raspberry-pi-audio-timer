@@ -21,6 +21,10 @@ pygame의 장점으로 오디오 볼품조절 및 fade-in fade-out 기능이 있
 
 ---
 
-## 상태 Display 부분  
+## 상태 Display - curses 라이브러리
 Command line에서 현재의 상태를 확인하고 싶었고, 하나의 페이지 처럼 나오면 좋겠다는 생각이 들았다.  
 즉 내가 많이 쓰는 `nvidia-smi -l 1`과 `watch -n 1 nvidia-smi`의 차이 처럼 현재 정보를 업데이트 하는 표현 방식을 원했다.  
+이에 대한 해결책으로 curses 라이브러리를 사용하는 것으로 해결하였다.  
+curses 라이브러리를 사용해서 현재 화변을 refresh하는 상태 표시 화면을 만들 수 있었다.  
+![curses](image/curses_ex.gif)
+
